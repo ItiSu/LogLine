@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: logline-redis
+    ports:
+      - "6381:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: logline-backend
+    ports:
+      - "3002:3001"
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - PORT=3001
+      - NODE_ENV=development
+    depends_on:
+      redis:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: logline-frontend
+    ports:
+      - "3003:3000"
+    environment:
+      - VITE_API_URL=http://localhost:3002
+    depends_on:
+      - backend
