@@ -110,7 +110,7 @@ Services will be available at:
 4. **Cursor Tracking**: Cursor positions sent in real-time to all users
 5. **Code Execution**: Code sent to backend → executed in isolated environment
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 LogLine/
