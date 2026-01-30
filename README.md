@@ -1,14 +1,16 @@
 # LogLine
 
-![LogLine Logo](frontend/public/logo.svg)
+<img width="1275" height="233" alt="Image" src="https://github.com/user-attachments/assets/6b167614-2afb-4de8-9d95-9781f5a4fc37" />
+
+<img width="1276" height="480" alt="Image" src="https://github.com/user-attachments/assets/b535eaf5-9fd4-4384-84f7-c6958b0c077f" />
 
 **LogLine** is a lightweight, real-time collaborative code editor where multiple users can open the same document in their browser, edit simultaneously, and see each other's changes instantly.
 
-## 🚀 Live Demo
+##  Live Demo
 
 Open multiple browser tabs at `http://localhost:3003` to test real-time collaboration!
 
-## ✨ Features
+##  Features
 
 ### Core Functionality
 - **Real-Time Collaboration**: Multiple users can edit the same document simultaneously
@@ -21,13 +23,13 @@ Supports **14 programming languages** with syntax highlighting:
 
 | Language | Execution |
 |----------|-----------|
-| JavaScript | ✅ Node.js |
-| TypeScript | ✅ ts-node |
-| Python | ✅ Python 3 |
-| Java | ✅ OpenJDK |
-| C++ | ✅ GCC |
-| Rust | ✅ Rustc |
-| Go | ✅ Go runtime |
+| JavaScript |  Node.js |
+| TypeScript |  ts-node |
+| Python |  Python 3 |
+| Java |  OpenJDK |
+| C++ |  GCC |
+| Rust |  Rustc |
+| Go |  Go runtime |
 | HTML | Syntax only |
 | CSS | Syntax only |
 | JSON | Validation |
@@ -44,7 +46,7 @@ Supports **14 programming languages** with syntax highlighting:
 - Language selection dropdown
 - Light, clean UI
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Backend
 - **Node.js** with TypeScript
@@ -62,7 +64,7 @@ Supports **14 programming languages** with syntax highlighting:
 - **Docker Compose** for orchestration
 - **Redis** for cross-instance synchronization
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Docker and Docker Compose
@@ -85,7 +87,7 @@ Services will be available at:
 - **Backend**: http://localhost:3002
 - **Redis**: localhost:6381
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────┐      WebSocket       ┌─────────────┐
@@ -132,7 +134,7 @@ LogLine/
 └── README.md
 ```
 
-## 🔧 Development
+##  Development
 
 ### Backend Development
 ```bash
@@ -148,21 +150,21 @@ npm install
 npm run dev
 ```
 
-## 🎨 UI/UX Design
+##  UI/UX Design
 
 - **Clean & Modern**: Light theme with subtle shadows
 - **Non-Generic**: Custom sci-fi themed user names
 - **Professional Footer**: Creator attribution with GitHub link
 - **Minimal Clutter**: Focus on the code editor
 
-## 🔒 Security
+##  Security
 
 - CORS enabled for cross-origin requests
 - Code execution in isolated temporary files
 - No persistent storage of user code
 - No authentication required (open collaboration)
 
-## 🐳 Docker Services
+##  Docker Services
 
 | Service | Port | Description |
 |---------|------|-------------|
@@ -170,7 +172,7 @@ npm run dev
 | backend | 3002 | Node.js API & WebSocket |
 | redis | 6381 | Pub/Sub messaging |
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -178,11 +180,11 @@ npm run dev
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
+##  License
 
 This project is open source and available under the MIT License.
 
-## 👏 Acknowledgments
+##  Acknowledgments
 
 - Monaco Editor by Microsoft
 - Socket.IO team
